@@ -1,2 +1,2 @@
 # Python-tekeleet
-Tässä on mun Python tehtäviä
+Tässä on mun kouluun liittyvät Python asiat.
