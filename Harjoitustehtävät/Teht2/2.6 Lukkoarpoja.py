@@ -1,6 +1,12 @@
 import random
 print("Arvon nyt kaksi numerolukon koodia:")
-koodi1 = [random.randint(0, 9), random.randint(0, 9) ,random.randint(0, 9)]
-koodi2 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
-print(koodi1)
-print(koodi2)
+
+ekakoodi = []
+for i in range(3):
+    ekakoodi.append(random.randint(0, 9))
+print(ekakoodi)
+
+tokakoodi = []
+for i in range(4):
+    tokakoodi.append(random.randint(1, 6))
+print(tokakoodi)
