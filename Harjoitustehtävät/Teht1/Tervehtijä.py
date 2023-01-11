@@ -1,1 +1,0 @@
-print("Tervehdys Tatu Säilynoja!")
