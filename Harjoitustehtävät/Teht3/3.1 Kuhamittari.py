@@ -1,5 +1,7 @@
-KuhanPituus =  int(input("Kuinka pitkä kuhasi on senttimetreissä?"))
-if KuhanPituus >= 37:
+KuhanPituus = int(input("Kuinka pitkä kuhasi on senttimetreissä?"))
+pituusraja = 37
+
+if KuhanPituus >= pituusraja:
     print("Hieno kala!")
 else:
-    print("Kuhasi on", 37-KuhanPituus, "senttiä liian lyhyt. Päästetään se takaisin järveen.")
+    print("Kuhasi on", pituusraja-KuhanPituus, "senttiä liian lyhyt. Päästetään se takaisin järveen.")
