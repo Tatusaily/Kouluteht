@@ -8,6 +8,7 @@ import ast
 lukujono = []
 x = 0
 
+#TODO laita tähän looppiin joku tunnistus käyttäjän inputille ja päättele voiko sen laittaa [lukujonoon].
 while (x == 0):
     uusiluku = input("Anna luku lukujonoon tai paina ENTER")
     if (uusiluku == ""):
@@ -18,4 +19,4 @@ while (x == 0):
         print("Uusi lukusi ei ollut luku. Koita uudestaan.")
 
 print(lukujono)
-#Tulosta pienin ja suurin.
+#TODO Tulosta pienin ja suurin.
