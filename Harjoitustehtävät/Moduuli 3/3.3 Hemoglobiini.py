@@ -7,7 +7,11 @@ Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.
 """
 
 sukupuoli = str.lower(input("Oletko biologiselta sukupuoleltasi mies vai nainen?"))
-hemoglobi = float(input("Mikä on hemoglobiiniarvosi? (g/l)"))
+try:
+    hemoglobi = float(input("Mikä on hemoglobiiniarvosi? (g/l)"))
+except:
+    quit(Print("Anna hemoglobiiniarvosi numeroina."))
+
 if sukupuoli == "mies" or sukupuoli == "nainen":
     if sukupuoli == "mies":
         if hemoglobi > 195:
