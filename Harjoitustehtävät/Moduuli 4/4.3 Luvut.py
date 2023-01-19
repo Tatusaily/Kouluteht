@@ -6,6 +6,7 @@ Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 lukujono = []
 uusiluku = input("Anna luku lukujonoon tai paina ENTER")
 
+# Tää kaatuu jos käyttäjä syöttää tekstiä.
 while (uusiluku != ""):
     uusiluku = float(uusiluku)
     if uusiluku % 1 == 0.0:
