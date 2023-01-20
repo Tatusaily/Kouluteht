@@ -28,12 +28,13 @@ N = int(input("Montako pistettä tehdään?"))
 n = 0
 koorx = 0
 koory = 0
-
-for x in range(N):
+x = 1
+while x <= N:
     koorx = random.uniform(-1, 1)
     koory = random.uniform(-1, 1)
     if (koorx ** 2 + koory ** 2) < 1:
         n += 1
+    x += 1
 
 print(f"Pisteet yhteensä: {N}.")
 print(f"Ympyrän sisällä on: {n} pistettä.")
