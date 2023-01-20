@@ -22,9 +22,20 @@ Lopuksi ohjelma tulostaa piin likiarvon käyttäjälle.
 (Huomaa, että jokaisesta arvotusta pisteestä (x,y) on helppoa testata
 onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäyhtälön x^2+y^2<1.)
 """
-#pisteiden määrä = input(N)
-#N määrä (x, y) listoja/lukujonoja/koordinaatteja jotka menee _dictionaryyn?_
-    #jossa x ja y on kumpikin -1 ja 1 välillä
-#ota selvää set/tuple/list/dictionary
-#koordinaatit otetaan lopuksi ja niitä verrataan x^2+y^2<1 <- miksi tuo?
-#lopuksi print(n/N) ja print(pi) ota joku hyvä desimaali
+import random
+import math
+
+N = int(input("Montako pistettä tehdään?"))
+n = 0
+koorx = 0
+koory = 0
+
+for x in range(N):
+    koorx = random.uniform(-1, 1)
+    koory = random.uniform(-1, 1)
+    if (koorx ** 2 + koory ** 2) < 1:
+        n += 1
+
+print(f"Pisteet yhteensä: {N}.")
+print(f"Ympyrän sisällä on: {n} pistettä.")
+print(f"Ohjelman antama piin likiarvo: {4 * n / N}")
