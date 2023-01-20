@@ -7,6 +7,8 @@ try:
 except:
     quit(print("Anna vuosiluku numeroina kokonaislukuna."))
 
+#Tarkistaa, jos käyttäjän antama vuosiluku EI ole karkausvuosi.
+#Koitin aluksi toisin, mutta tämä osoittautui yksinkertaisemmaksi.
 if vuosi % 4 != 0:
     print(f"Vuosi ei ole karkausvuosi")
 elif vuosi % 100 == 0 and vuosi % 400 != 0:

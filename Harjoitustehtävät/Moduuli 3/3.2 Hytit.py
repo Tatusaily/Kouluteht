@@ -8,13 +8,13 @@ hyttib = "B on ikkunaton hytti autokannen yläpuolella."
 hyttic = "C on ikkunaton hytti autokannen alapuolella."
 
 #Hyttikuvauksen anto
-if      hyttivalinta == "LUX":
+if hyttivalinta == "LUX":
     print(hyttilux)
-elif    hyttivalinta == "A":
+elif hyttivalinta == "A":
     print(hyttia)
-elif    hyttivalinta == "B":
+elif hyttivalinta == "B":
     print(hyttib)
-elif    hyttivalinta == "C":
+elif hyttivalinta == "C":
     print(hyttic)
 else:
     print("Virheellinen Hyttiluokka!")
