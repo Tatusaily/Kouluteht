@@ -23,7 +23,6 @@ Lopuksi ohjelma tulostaa piin likiarvon käyttäjälle.
 onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäyhtälön x^2+y^2<1.)
 """
 import random
-import math
 
 N = int(input("Montako pistettä tehdään?"))
 n = 0
