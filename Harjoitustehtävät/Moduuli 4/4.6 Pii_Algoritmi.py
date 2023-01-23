@@ -24,7 +24,7 @@ onko se yksikköympyrän A sisällä: riittää testata, toteuttaako piste epäy
 """
 import random
 
-N = int(input("Montako pistettä tehdään?"))
+N = int(input("Montako pistettä tehdään? "))
 n = 0
 koorx = 0
 koory = 0
