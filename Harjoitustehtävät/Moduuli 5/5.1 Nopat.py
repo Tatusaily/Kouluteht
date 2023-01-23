@@ -4,6 +4,7 @@ Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan.
 """
 import random
 
+#Tehdään rand.luku ja yhteenlasketaan se aina vanhan päälle.
 nopat = int(input("Montako noppaa heitetään? "))
 kokonais = 0
 for x in range(nopat):
