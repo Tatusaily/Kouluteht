@@ -21,6 +21,7 @@ ekapizza = pizzalaskuri(halk, hint)
 halk = float(input("Anna toisen pizzan halkaisija (cm): "))
 hint = float(input("Anna toisen pizzan hinta (€): "))
 tokapizza = pizzalaskuri(halk, hint)
+print("")
 
 print(f"Eka pizza = {round(ekapizza, 3)} € / cm^2 \nToka pizza = {round(tokapizza, 3)} € / cm^2")
 if ekapizza > tokapizza:
