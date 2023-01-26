@@ -21,6 +21,8 @@ lukum = int(input("Montako lukua luodaan listaan? "))
 for n in range(lukum):
     primary_list.append(random.randint(1, 99))
 
+karsittu_lista = karsija(primary_list)
+
 #Kutsutaan karsijaa ja karsitaan primary_list
-print(f"Tehtiin lista {primary_list}. Laitetaan se karsijan läpi: \n")
-print(karsija(primary_list))
+print(f"Tehtiin lista {primary_list}. Laitettiin se karsijan läpi: \n")
+print(karsittu_lista)
