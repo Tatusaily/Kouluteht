@@ -6,8 +6,26 @@ Pääohjelma kysyy käyttäjältä kahden pizzan halkaisijat ja hinnat sekä
 Yksikköhintojen laskennassa on hyödynnettävä kirjoitettua funktiota.
 """
 import math
+
+
 def pizzalaskuri(halkaisija, hinta):
     pinta_ala = math.pi * halkaisija
     hinta_ala = hinta / pinta_ala
     return hinta_ala
 
+
+halk = float(input("Anna ensimmäisen pizzan halkaisija (cm): "))
+hint = float(input("Anna ensimmäisen pizzan hinta (€): "))
+ekapizza = pizzalaskuri(halk, hint)
+
+halk = float(input("Anna toisen pizzan halkaisija (cm): "))
+hint = float(input("Anna toisen pizzan hinta (€): "))
+tokapizza = pizzalaskuri(halk, hint)
+
+print(f"Eka pizza = {round(ekapizza, 3)} € / cm^2 \nToka pizza = {round(tokapizza, 3)} € / cm^2")
+if ekapizza > tokapizza:
+    print("Eka pizza on parempi vastine rahalle.")
+elif tokapizza > ekapizza:
+    print("Toka pizza on parempi vastine rahalle.")
+else:
+    print("Pizzat ovat yhtä hyviä vastineita rahalle.")
