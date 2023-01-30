@@ -12,15 +12,14 @@ def gallon_litra(gallonat):
     litrat = gallonat*3.785
     return litrat
 
+
 go = True
 valinta = int(input("Anna gallonat niin muutan ne litroiksi: "))
-if gallon_litra(valinta) < 0:
-    go = False
-while go == True:
+
+while go:
     if gallon_litra(valinta) < 0:
         go = False
+        quit(print("Annoit negatiivisen luvun. Suljetaan."))
     else:
         print(round(gallon_litra(valinta), 2))
         valinta = int(input("Anna gallonat, niin muutan ne litroiksi. "))
-
-quit(print("Annoit negatiivisen luvun. Suljetaan."))

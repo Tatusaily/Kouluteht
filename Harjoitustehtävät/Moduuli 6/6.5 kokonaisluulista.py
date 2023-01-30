@@ -6,12 +6,15 @@ Kirjoita testausta varten pääohjelma, jossa luot listan, kutsut funktiota ja t
 jälkeen sekä alkuperäisen että karsitun listan.
 """
 import random
+
+
 def karsija(raakalista):
     uusilista = []
     for i in raakalista:
         if i % 2 == 0:
             uusilista.append(i)
     return uusilista
+
 
 primary_list = []
 lukum = int(input("Montako lukua luodaan listaan? "))
