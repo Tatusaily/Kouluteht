@@ -16,6 +16,7 @@ kentat = {}
 while inp != "" or inp != "L":
     inp = input("Haluatko (S)yöttää (H)akea vai (L)opettaa? ")
     inp = inp.upper()
+
     if inp[0] == "S":
         #SYÖTTÖ
         ICAOs = input("Anna kentän ICAO -tunnus. ")
