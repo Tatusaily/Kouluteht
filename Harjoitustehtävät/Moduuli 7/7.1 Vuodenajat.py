@@ -10,19 +10,18 @@ Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi siten, että joul
     #3, 4, 5 = Kevät [1]
     #6, 7, 8 = Kesä [2]
     #9, 10, 11 = Syksy [3]
-#Ota vuodenajat -listasta (kuukausi/3 -pyör. alas) indeksistä.
-    #12 = [0]
+#Vuodenajat tuplesta otetaan syötetty kuukausinro ja palautetaan vastaava vuodenaika.
 #Print vuodenaika
 
 import math
 
-vuodenajat = ["Talvi", "Kevät", "Kesä", "Syksy"]
-kuukausi = int(input("Anna kuukauden numero: "))
+vuodenajat = ("Talvi", "Kevät", "Kesä", "Syksy")
+kuukausi = int(input("Anna kuukauden numero (1 - 12): "))
 
 if kuukausi == 12:
     vuodenaikanro = 0
 else:
     vuodenaikanro = math.floor(kuukausi/3)
 
-vuodenaika = vuodenajat[vuodenaikanro]
-print (vuodenaika)
+
+print (vuodenajat[vuodenaikanro])
