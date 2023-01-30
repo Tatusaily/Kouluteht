@@ -11,11 +11,12 @@ def summalist(x):
     return(sum(x))
 
 
+#Randomlist funktio luo listan jota myöhemmin summataan summalist funktiolla.
 def randomilist(lukum, raja):
     for i in range(lukum):
         lista.append(random.randint(1, raja))
 
-
+#Kysytään käyttäjältä listan luonnin parametrit. Lista luodaan ja summataan funktioilla.
 lista = []
 lukum = int(input("Montako lukua haluat lisätä listaan? "))
 raja = int(input("Minkä haluat suurimmaksi mahdolliseksi luvuksi? "))
