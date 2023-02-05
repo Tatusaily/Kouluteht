@@ -6,7 +6,7 @@ Laske etäisyys geopy-kirjaston avulla: https://geopy.readthedocs.io/en/stable/.
 Asenna kirjasto valitsemalla View / Tool Windows / Python Packages.
 Kirjoita hakukenttään geopy ja vie asennus loppuun.
 """
-import geopy.distance
+from geopy import distance
 import mysql.connector
 
 yhteys = mysql.connector.connect(
@@ -23,7 +23,15 @@ def GetAirportCoords(ICAO):
     query = f"SELECT latitude_deg, longitude_deg FROM airport WHERE ident= '{ICAO}';"
     cursor = yhteys.cursor()
     cursor.execute(query)
-    result = cursor.fetchall()
+    result = cursor.fetchone()  #fetchone palauttaa ensimmäisen(seuraavan) rivin taulusta tuplena.
     return result
+
+coordinates = []
+for n in range(2):
+    icaoinput = input("Anna ICAO koodi: ")
+
+
+
+
 
 
