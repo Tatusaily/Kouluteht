@@ -19,8 +19,9 @@ def GetAirport(ICAO):
     query = f"SELECT name, municipality from airport WHERE ident= '{ICAO}'"
     kursori = yhteys.cursor()
     kursori.execute(query)
-    tulos = kursori.fetchall()  #fetchall palauttaa listan jossa on kaikki tulokset tuplena
+    tulos = kursori.fetchall()  #fetchall palauttaa listan jossa on kaikki tulokset tuplena. fetchone on parempi tähän
     return tulos
+
 
 koodi = input("Anna ICAO koodi: ")
 kenttä = GetAirport(koodi)
