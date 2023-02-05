@@ -23,5 +23,8 @@ def GetAirport(ICAO):
     return tulos
 
 koodi = input("Anna ICAO koodi: ")
-print(GetAirport(koodi))
+kenttä = GetAirport(koodi)
+tuloskent = kenttä[0]
+print(f"{tuloskent[0]}, {tuloskent[1]}.")
+
 
