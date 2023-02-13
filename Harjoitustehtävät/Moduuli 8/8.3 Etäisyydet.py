@@ -26,9 +26,15 @@ def GetAirportCoords(ICAO):
     result = cursor.fetchone()  #fetchone palauttaa ensimmäisen(seuraavan) rivin taulusta tuplena.
     return result
 
+#perustetaan coordinates lista johon loopilla ootetaan tietokannasta koordinaatti-tuplet.
+#Tuplet lisätään listaan ja etäisyys lasketaan osoittamalla indeksiin.
 coordinates = []
 for n in range(2):
-    icaoinput = input("Anna ICAO koodi: ")
+    icaoinput = input(f"Anna {n+1}. ICAO koodi: ")
+    coordinates.append(GetAirportCoords(icaoinput))
+
+dista = distance.distance(coordinates[0], coordinates[1])
+print(f"Valitsemiesi lentokenttien etäisyys on {dista.km:.1f} kilometriä.")
 
 
 

@@ -17,7 +17,7 @@ yhteys = mysql.connector.connect(
          )
 def GetAirport(ISO):
     ISO = ISO.upper()
-    query = f"SELECT type, count(type) FROM airport WHERE iso_country= '{ISO}' group by type;"
+    query = f"SELECT type, count(type) FROM airport WHERE iso_country= '{ISO}' GROUP BY type;"
     kursori = yhteys.cursor()
     kursori.execute(query)
     tulos = kursori.fetchall()
@@ -26,6 +26,7 @@ def GetAirport(ISO):
 ISO = input("Anna maakoodi: ")
 print("")
 tulokset = GetAirport(ISO)
-print(f"{'Tyyppi':<5} {'Lukumäärä':>18}")
+print(f"{'Tyyppi':<18} {'Lukumäärä':>14}")
 for t in tulokset:
-    print(f"{t[0]:<20} {t[1]:>4}")
+    print(f"{t[0]:<20} {t[1]:>12}")
+
