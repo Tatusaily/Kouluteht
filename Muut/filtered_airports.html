@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68b79e8bbb56de6e2a5f42cad7f2eaab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68b79e8bbb56de6e2a5f42cad7f2eaab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68b79e8bbb56de6e2a5f42cad7f2eaab = L.map(
+                "map_68b79e8bbb56de6e2a5f42cad7f2eaab",
+                {
+                    center: [36.37529855944127, 19.046737014277873],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c11fa2ef96ff81eae9f09c1f2faa9e7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+            var marker_b5c5a66b7eb364feec60eb82a24a1120 = L.marker(
+                [28.587099075317383, 19.30340003967285],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_15934826cf926bfb83e05f6378c203d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37a3ecab00475689e32934e6179b5be5 = $(`<div id="html_37a3ecab00475689e32934e6179b5be5" style="width: 100.0%; height: 100.0%;">Zelten Sw New Airport</div>`)[0];
+                popup_15934826cf926bfb83e05f6378c203d5.setContent(html_37a3ecab00475689e32934e6179b5be5);
+            
+        
+
+        marker_b5c5a66b7eb364feec60eb82a24a1120.bindPopup(popup_15934826cf926bfb83e05f6378c203d5)
+        ;
+
+        
+    
+    
+            var marker_1833b9b5d545909e8ac52183b52b508b = L.marker(
+                [37.1493, -8.58396],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_25a82772fe93c76e51ff939144f353b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0289fe087a8af11f6a3e07eabe96c04a = $(`<div id="html_0289fe087a8af11f6a3e07eabe96c04a" style="width: 100.0%; height: 100.0%;">Portimão Airport</div>`)[0];
+                popup_25a82772fe93c76e51ff939144f353b5.setContent(html_0289fe087a8af11f6a3e07eabe96c04a);
+            
+        
+
+        marker_1833b9b5d545909e8ac52183b52b508b.bindPopup(popup_25a82772fe93c76e51ff939144f353b5)
+        ;
+
+        
+    
+    
+            var marker_5d770582a6c3edfc0e327513cd8137b9 = L.marker(
+                [49.773, 7.5217],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_444b36166a3ac2b3ac5a3aa5374b8f31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a7da5818663ef6b78e0aa74a511b92 = $(`<div id="html_48a7da5818663ef6b78e0aa74a511b92" style="width: 100.0%; height: 100.0%;">Kirn Airfield</div>`)[0];
+                popup_444b36166a3ac2b3ac5a3aa5374b8f31.setContent(html_48a7da5818663ef6b78e0aa74a511b92);
+            
+        
+
+        marker_5d770582a6c3edfc0e327513cd8137b9.bindPopup(popup_444b36166a3ac2b3ac5a3aa5374b8f31)
+        ;
+
+        
+    
+    
+            var marker_02244dd48acf403eb3061eed6d860bb9 = L.marker(
+                [-7.232999801635742, 22.600000381469727],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_ff61046dd1c39c30a3dd37f9e0fa3034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84bda89b7a80e83e5eb04cbd6edfef22 = $(`<div id="html_84bda89b7a80e83e5eb04cbd6edfef22" style="width: 100.0%; height: 100.0%;">Moma Airport</div>`)[0];
+                popup_ff61046dd1c39c30a3dd37f9e0fa3034.setContent(html_84bda89b7a80e83e5eb04cbd6edfef22);
+            
+        
+
+        marker_02244dd48acf403eb3061eed6d860bb9.bindPopup(popup_ff61046dd1c39c30a3dd37f9e0fa3034)
+        ;
+
+        
+    
+    
+            var marker_c1f935215608c6415ebf3d6c377b5bda = L.marker(
+                [37.5056, -6.70245],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_2a6d4dd64b0c1c32bfcd29ffb51aadd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_113b7c52747235867db55ef522260adf = $(`<div id="html_113b7c52747235867db55ef522260adf" style="width: 100.0%; height: 100.0%;">Aeródromo de Valverde del Camino</div>`)[0];
+                popup_2a6d4dd64b0c1c32bfcd29ffb51aadd9.setContent(html_113b7c52747235867db55ef522260adf);
+            
+        
+
+        marker_c1f935215608c6415ebf3d6c377b5bda.bindPopup(popup_2a6d4dd64b0c1c32bfcd29ffb51aadd9)
+        ;
+
+        
+    
+    
+            var marker_4548e059d31e5f807ed1c589d7d425e1 = L.marker(
+                [43.5525016784668, -7.087779998779297],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_13e6d23b0caa2db6c677fe9f2a80e716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a881b588fe60d9e99d9e2cd3fb761055 = $(`<div id="html_a881b588fe60d9e99d9e2cd3fb761055" style="width: 100.0%; height: 100.0%;">Villaframil Airport</div>`)[0];
+                popup_13e6d23b0caa2db6c677fe9f2a80e716.setContent(html_a881b588fe60d9e99d9e2cd3fb761055);
+            
+        
+
+        marker_4548e059d31e5f807ed1c589d7d425e1.bindPopup(popup_13e6d23b0caa2db6c677fe9f2a80e716)
+        ;
+
+        
+    
+    
+            var marker_3813c61494cd196d0e3d76f9854cce31 = L.marker(
+                [51.54090118408203, 45.8484992980957],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_5ae7cca87f2849f4b0d37ea3dd92bec6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cd6e2e8521eaeacdd723b3036853106 = $(`<div id="html_8cd6e2e8521eaeacdd723b3036853106" style="width: 100.0%; height: 100.0%;">Saratov Sokol Airfield</div>`)[0];
+                popup_5ae7cca87f2849f4b0d37ea3dd92bec6.setContent(html_8cd6e2e8521eaeacdd723b3036853106);
+            
+        
+
+        marker_3813c61494cd196d0e3d76f9854cce31.bindPopup(popup_5ae7cca87f2849f4b0d37ea3dd92bec6)
+        ;
+
+        
+    
+    
+            var marker_aaab548f2fa3f4f459485a6d1f9303da = L.marker(
+                [1.636607, 11.302458],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_638a14b40dabd63f171326b9c7ed671f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ae76bea4f820cf8ae6939abb6f5670 = $(`<div id="html_78ae76bea4f820cf8ae6939abb6f5670" style="width: 100.0%; height: 100.0%;">Mongomo Airport</div>`)[0];
+                popup_638a14b40dabd63f171326b9c7ed671f.setContent(html_78ae76bea4f820cf8ae6939abb6f5670);
+            
+        
+
+        marker_aaab548f2fa3f4f459485a6d1f9303da.bindPopup(popup_638a14b40dabd63f171326b9c7ed671f)
+        ;
+
+        
+    
+    
+            var marker_7d85d70bd06e55cbf372f7067c9053a7 = L.marker(
+                [42.85598, 131.40188],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_486b4c45d671f37141c4c0a5f815b0d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9695523d49ac79e39bf87cc229e14f1 = $(`<div id="html_c9695523d49ac79e39bf87cc229e14f1" style="width: 100.0%; height: 100.0%;">Khasanskaya Central Regional Hospital He</div>`)[0];
+                popup_486b4c45d671f37141c4c0a5f815b0d4.setContent(html_c9695523d49ac79e39bf87cc229e14f1);
+            
+        
+
+        marker_7d85d70bd06e55cbf372f7067c9053a7.bindPopup(popup_486b4c45d671f37141c4c0a5f815b0d4)
+        ;
+
+        
+    
+    
+            var marker_66c84d8fcf5b7ffd2009db2c33471ef4 = L.marker(
+                [13.067000389099121, -1.100000023841858],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_7cabdec990b4d0497a5646043c2404a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18f6549f58a0307612de5c6dfc0d82f = $(`<div id="html_e18f6549f58a0307612de5c6dfc0d82f" style="width: 100.0%; height: 100.0%;">Kaya Airport</div>`)[0];
+                popup_7cabdec990b4d0497a5646043c2404a4.setContent(html_e18f6549f58a0307612de5c6dfc0d82f);
+            
+        
+
+        marker_66c84d8fcf5b7ffd2009db2c33471ef4.bindPopup(popup_7cabdec990b4d0497a5646043c2404a4)
+        ;
+
+        
+    
+    
+            var marker_d0960d47bf59598b39278082a914cb22 = L.marker(
+                [54.49273, -8.24091],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_b369629903947f2977c829c5c13e71de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb8fb07cd499908b9fa2e68ee4386566 = $(`<div id="html_eb8fb07cd499908b9fa2e68ee4386566" style="width: 100.0%; height: 100.0%;">Finner Camp Heliport</div>`)[0];
+                popup_b369629903947f2977c829c5c13e71de.setContent(html_eb8fb07cd499908b9fa2e68ee4386566);
+            
+        
+
+        marker_d0960d47bf59598b39278082a914cb22.bindPopup(popup_b369629903947f2977c829c5c13e71de)
+        ;
+
+        
+    
+    
+            var marker_9c66a5ffafa4c2ffe51226894d0d8ab1 = L.marker(
+                [35.0167007446, -1.45000004768],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_e283a751498d2ed3c0bf31a871f5e12e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb765ed380fa4b94bd1664a26eab847a = $(`<div id="html_bb765ed380fa4b94bd1664a26eab847a" style="width: 100.0%; height: 100.0%;">Zenata – Messali El Hadj Airport</div>`)[0];
+                popup_e283a751498d2ed3c0bf31a871f5e12e.setContent(html_bb765ed380fa4b94bd1664a26eab847a);
+            
+        
+
+        marker_9c66a5ffafa4c2ffe51226894d0d8ab1.bindPopup(popup_e283a751498d2ed3c0bf31a871f5e12e)
+        ;
+
+        
+    
+    
+            var marker_c84a17caaa199c02395849fc31ef8233 = L.marker(
+                [43.30381, 134.60221],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_23442c73675f1840b12e3e4f87aae36b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc8a7258501f048d8061fcbb9e862d92 = $(`<div id="html_dc8a7258501f048d8061fcbb9e862d92" style="width: 100.0%; height: 100.0%;">Milogradovo Heliport</div>`)[0];
+                popup_23442c73675f1840b12e3e4f87aae36b.setContent(html_dc8a7258501f048d8061fcbb9e862d92);
+            
+        
+
+        marker_c84a17caaa199c02395849fc31ef8233.bindPopup(popup_23442c73675f1840b12e3e4f87aae36b)
+        ;
+
+        
+    
+    
+            var marker_5048dbc50e80139ea8227fd07bec1531 = L.marker(
+                [27.97570037841797, 22.35740089416504],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_d11fdfcf182d6a40be724d5eb2bf0a4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f90deb60110d0e1b716a40b1f19568a2 = $(`<div id="html_f90deb60110d0e1b716a40b1f19568a2" style="width: 100.0%; height: 100.0%;">Sarir Nw Airport</div>`)[0];
+                popup_d11fdfcf182d6a40be724d5eb2bf0a4d.setContent(html_f90deb60110d0e1b716a40b1f19568a2);
+            
+        
+
+        marker_5048dbc50e80139ea8227fd07bec1531.bindPopup(popup_d11fdfcf182d6a40be724d5eb2bf0a4d)
+        ;
+
+        
+    
+    
+            var marker_1ae5d9da47873f5da0e88b8cbfdd4555 = L.marker(
+                [43.345961, 0.361649],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_260a5b48434b0d210762d60faa1d6770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1726c71e264218b5eadec7255f090721 = $(`<div id="html_1726c71e264218b5eadec7255f090721" style="width: 100.0%; height: 100.0%;">Base ULM de Fontrailles</div>`)[0];
+                popup_260a5b48434b0d210762d60faa1d6770.setContent(html_1726c71e264218b5eadec7255f090721);
+            
+        
+
+        marker_1ae5d9da47873f5da0e88b8cbfdd4555.bindPopup(popup_260a5b48434b0d210762d60faa1d6770)
+        ;
+
+        
+    
+    
+            var marker_44e90dda625302cc24432b083b03c039 = L.marker(
+                [60.2934, 5.21814],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_f65df9ae851b8e974057f5da93ce3e24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2672f0760112f20e95a8fe031b2e154a = $(`<div id="html_2672f0760112f20e95a8fe031b2e154a" style="width: 100.0%; height: 100.0%;">Bergen Airport, Flesland</div>`)[0];
+                popup_f65df9ae851b8e974057f5da93ce3e24.setContent(html_2672f0760112f20e95a8fe031b2e154a);
+            
+        
+
+        marker_44e90dda625302cc24432b083b03c039.bindPopup(popup_f65df9ae851b8e974057f5da93ce3e24)
+        ;
+
+        
+    
+    
+            var marker_4573969b012a484611bd753227f7dd25 = L.marker(
+                [52.275002, 26.775],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_20369373df381094fc068b067eb67e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03541a41b21372088642c24e951436bb = $(`<div id="html_03541a41b21372088642c24e951436bb" style="width: 100.0%; height: 100.0%;">Luninets Air Base</div>`)[0];
+                popup_20369373df381094fc068b067eb67e10.setContent(html_03541a41b21372088642c24e951436bb);
+            
+        
+
+        marker_4573969b012a484611bd753227f7dd25.bindPopup(popup_20369373df381094fc068b067eb67e10)
+        ;
+
+        
+    
+    
+            var marker_dab4bbddb1118cbc8c4b59c5abcf83ca = L.marker(
+                [60.991112, 24.415277],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_90e28f9e724664938d5bf6fe1c0e2718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d43c67593918d1129d443b5276c2ef97 = $(`<div id="html_d43c67593918d1129d443b5276c2ef97" style="width: 100.0%; height: 100.0%;">Kanta-Hämeen Central Hospital Heliport</div>`)[0];
+                popup_90e28f9e724664938d5bf6fe1c0e2718.setContent(html_d43c67593918d1129d443b5276c2ef97);
+            
+        
+
+        marker_dab4bbddb1118cbc8c4b59c5abcf83ca.bindPopup(popup_90e28f9e724664938d5bf6fe1c0e2718)
+        ;
+
+        
+    
+    
+            var marker_3eb5c338013d0816b20f3ec6935abb84 = L.marker(
+                [52.7185, 1.55172],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_8ff43c10bd0bdc7e135f2cba365cbb88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd7c75e7048f1568f589601ab19f51e = $(`<div id="html_8dd7c75e7048f1568f589601ab19f51e" style="width: 100.0%; height: 100.0%;">Ludham Airfield</div>`)[0];
+                popup_8ff43c10bd0bdc7e135f2cba365cbb88.setContent(html_8dd7c75e7048f1568f589601ab19f51e);
+            
+        
+
+        marker_3eb5c338013d0816b20f3ec6935abb84.bindPopup(popup_8ff43c10bd0bdc7e135f2cba365cbb88)
+        ;
+
+        
+    
+    
+            var marker_b83e0f27323e5176cd30609f3a2e6dda = L.marker(
+                [48.179168701171875, 10.702777862548828],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_20c9bd219f5bd00cc0364886b8ca11e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e4951318f638eb547ed07500f444ff9 = $(`<div id="html_7e4951318f638eb547ed07500f444ff9" style="width: 100.0%; height: 100.0%;">Schwabmünchen Airport</div>`)[0];
+                popup_20c9bd219f5bd00cc0364886b8ca11e3.setContent(html_7e4951318f638eb547ed07500f444ff9);
+            
+        
+
+        marker_b83e0f27323e5176cd30609f3a2e6dda.bindPopup(popup_20c9bd219f5bd00cc0364886b8ca11e3)
+        ;
+
+        
+    
+    
+            var marker_59fb9873d29c93c0b75b5fc463b8a8ec = L.marker(
+                [50.928611755371094, 7.899167060852051],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_84b203ef414d75b43d38f86848be07b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba2b95ffcea105f5dc52dc1af038dd49 = $(`<div id="html_ba2b95ffcea105f5dc52dc1af038dd49" style="width: 100.0%; height: 100.0%;">Hünsborn Airport</div>`)[0];
+                popup_84b203ef414d75b43d38f86848be07b1.setContent(html_ba2b95ffcea105f5dc52dc1af038dd49);
+            
+        
+
+        marker_59fb9873d29c93c0b75b5fc463b8a8ec.bindPopup(popup_84b203ef414d75b43d38f86848be07b1)
+        ;
+
+        
+    
+    
+            var marker_129ebd9a57aae179fdf464cc01d3a188 = L.marker(
+                [43.725798, 7.419673],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_80ec7887a55c8b9fcb3032d615518daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f19ae8ca0e10aa15f0e7adc1a3e7d803 = $(`<div id="html_f19ae8ca0e10aa15f0e7adc1a3e7d803" style="width: 100.0%; height: 100.0%;">Monaco Heliport</div>`)[0];
+                popup_80ec7887a55c8b9fcb3032d615518daa.setContent(html_f19ae8ca0e10aa15f0e7adc1a3e7d803);
+            
+        
+
+        marker_129ebd9a57aae179fdf464cc01d3a188.bindPopup(popup_80ec7887a55c8b9fcb3032d615518daa)
+        ;
+
+        
+    
+    
+            var marker_e67b4dc0af4d10ad2945443c0ac6b735 = L.marker(
+                [0.510171, 29.475803],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_0ef2ad80008e2df92160be45d99e24d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_546b4c8308ddf3345fed257fb68909b5 = $(`<div id="html_546b4c8308ddf3345fed257fb68909b5" style="width: 100.0%; height: 100.0%;">Wageni Airport</div>`)[0];
+                popup_0ef2ad80008e2df92160be45d99e24d0.setContent(html_546b4c8308ddf3345fed257fb68909b5);
+            
+        
+
+        marker_e67b4dc0af4d10ad2945443c0ac6b735.bindPopup(popup_0ef2ad80008e2df92160be45d99e24d0)
+        ;
+
+        
+    
+    
+            var marker_b0a9c5259bcc507af0654beb5231dd5d = L.marker(
+                [42.447201, 2.01083],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_7869ebbcbcff0923d08abf7d9e5d10eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaeeb0adb427076d62fd0dfbdc10d1eb = $(`<div id="html_eaeeb0adb427076d62fd0dfbdc10d1eb" style="width: 100.0%; height: 100.0%;">Ste Léocadie Airfield</div>`)[0];
+                popup_7869ebbcbcff0923d08abf7d9e5d10eb.setContent(html_eaeeb0adb427076d62fd0dfbdc10d1eb);
+            
+        
+
+        marker_b0a9c5259bcc507af0654beb5231dd5d.bindPopup(popup_7869ebbcbcff0923d08abf7d9e5d10eb)
+        ;
+
+        
+    
+    
+            var marker_23acc2b8ec3b65f21b39927a64aa4e7d = L.marker(
+                [-25.81559944152832, 25.88640022277832],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_d712ca8a46d4daca4436fa8b787bbd70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b90aa922178c168aefda71c1d7e3d7e8 = $(`<div id="html_b90aa922178c168aefda71c1d7e3d7e8" style="width: 100.0%; height: 100.0%;">Slurry Airport</div>`)[0];
+                popup_d712ca8a46d4daca4436fa8b787bbd70.setContent(html_b90aa922178c168aefda71c1d7e3d7e8);
+            
+        
+
+        marker_23acc2b8ec3b65f21b39927a64aa4e7d.bindPopup(popup_d712ca8a46d4daca4436fa8b787bbd70)
+        ;
+
+        
+    
+    
+            var marker_5a422bc020bc94b09cc54d009351325c = L.marker(
+                [40.377356, 18.11211],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_1bd398607f67b817689e8d731d9e1c10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b13a5aaa7e4183c8b38720550bb532c0 = $(`<div id="html_b13a5aaa7e4183c8b38720550bb532c0" style="width: 100.0%; height: 100.0%;">Campo di volo La Fenice</div>`)[0];
+                popup_1bd398607f67b817689e8d731d9e1c10.setContent(html_b13a5aaa7e4183c8b38720550bb532c0);
+            
+        
+
+        marker_5a422bc020bc94b09cc54d009351325c.bindPopup(popup_1bd398607f67b817689e8d731d9e1c10)
+        ;
+
+        
+    
+    
+            var marker_9ce45244e875189e830e8caf5fa8f10b = L.marker(
+                [44.5354, 11.2887],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_e2f93ffe273ac9d9310c6749fc494e64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b43c01f7ba84527272cb95723615d45 = $(`<div id="html_7b43c01f7ba84527272cb95723615d45" style="width: 100.0%; height: 100.0%;">Bologna Guglielmo Marconi Airport</div>`)[0];
+                popup_e2f93ffe273ac9d9310c6749fc494e64.setContent(html_7b43c01f7ba84527272cb95723615d45);
+            
+        
+
+        marker_9ce45244e875189e830e8caf5fa8f10b.bindPopup(popup_e2f93ffe273ac9d9310c6749fc494e64)
+        ;
+
+        
+    
+    
+            var marker_e07979bbf1a46e0ce0d17312ef5abc7f = L.marker(
+                [52.5800833, -1.4313333],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_c3e2a6ed58aa1c040e3bc8cc3079eb24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a835ede696e301c05de0a83401434ff = $(`<div id="html_2a835ede696e301c05de0a83401434ff" style="width: 100.0%; height: 100.0%;">Stoke Golding Airfield</div>`)[0];
+                popup_c3e2a6ed58aa1c040e3bc8cc3079eb24.setContent(html_2a835ede696e301c05de0a83401434ff);
+            
+        
+
+        marker_e07979bbf1a46e0ce0d17312ef5abc7f.bindPopup(popup_c3e2a6ed58aa1c040e3bc8cc3079eb24)
+        ;
+
+        
+    
+    
+            var marker_b7158599b25f688f867571ae5b4813f0 = L.marker(
+                [44.925201, 8.62513],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_4a84ac48d39efeef13c58eb81fe87b7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f642b5e6ba2a4ab89e49131c22e67b7b = $(`<div id="html_f642b5e6ba2a4ab89e49131c22e67b7b" style="width: 100.0%; height: 100.0%;">Alessandria Airport</div>`)[0];
+                popup_4a84ac48d39efeef13c58eb81fe87b7b.setContent(html_f642b5e6ba2a4ab89e49131c22e67b7b);
+            
+        
+
+        marker_b7158599b25f688f867571ae5b4813f0.bindPopup(popup_4a84ac48d39efeef13c58eb81fe87b7b)
+        ;
+
+        
+    
+    
+            var marker_35fc7cbdc066acc1d2c3f682353d2234 = L.marker(
+                [39.2261566, -0.3665835],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_ee96e2fca5be50ec8fc35839ccc9c0e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e0e25cdd72ed27405d0c7a8e3757984 = $(`<div id="html_5e0e25cdd72ed27405d0c7a8e3757984" style="width: 100.0%; height: 100.0%;">Albalat de la Ribera</div>`)[0];
+                popup_ee96e2fca5be50ec8fc35839ccc9c0e7.setContent(html_5e0e25cdd72ed27405d0c7a8e3757984);
+            
+        
+
+        marker_35fc7cbdc066acc1d2c3f682353d2234.bindPopup(popup_ee96e2fca5be50ec8fc35839ccc9c0e7)
+        ;
+
+        
+    
+    
+            var marker_6615ef657dfccd7d9f32cdbe3154e5b9 = L.marker(
+                [39.997501373291016, 3.8133299350738525],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_60aa77e31869b8a3a06c385b54b55cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d403c92b4eec0e14d94af349abc7c8ed = $(`<div id="html_d403c92b4eec0e14d94af349abc7c8ed" style="width: 100.0%; height: 100.0%;">Cala'n Blanes Heliport</div>`)[0];
+                popup_60aa77e31869b8a3a06c385b54b55cb1.setContent(html_d403c92b4eec0e14d94af349abc7c8ed);
+            
+        
+
+        marker_6615ef657dfccd7d9f32cdbe3154e5b9.bindPopup(popup_60aa77e31869b8a3a06c385b54b55cb1)
+        ;
+
+        
+    
+    
+            var marker_4e27b1f40ddcab9dcd32d785da35d30d = L.marker(
+                [56.082801818847656, 13.212499618530273],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_b44046726ea64a817ccc7b1d5b4ac08f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8c5491cceabdf4690868457b34f9e53 = $(`<div id="html_a8c5491cceabdf4690868457b34f9e53" style="width: 100.0%; height: 100.0%;">Ljungbyhed Airport</div>`)[0];
+                popup_b44046726ea64a817ccc7b1d5b4ac08f.setContent(html_a8c5491cceabdf4690868457b34f9e53);
+            
+        
+
+        marker_4e27b1f40ddcab9dcd32d785da35d30d.bindPopup(popup_b44046726ea64a817ccc7b1d5b4ac08f)
+        ;
+
+        
+    
+    
+            var marker_c81baf2e06bb766eb0a099021cb4fdaa = L.marker(
+                [43.8842, 8.028549],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_20d678dac73b4f2fda2058a1af049b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f179a2704bab78aaca7f53660b459fd0 = $(`<div id="html_f179a2704bab78aaca7f53660b459fd0" style="width: 100.0%; height: 100.0%;">Eliporto Imperia</div>`)[0];
+                popup_20d678dac73b4f2fda2058a1af049b82.setContent(html_f179a2704bab78aaca7f53660b459fd0);
+            
+        
+
+        marker_c81baf2e06bb766eb0a099021cb4fdaa.bindPopup(popup_20d678dac73b4f2fda2058a1af049b82)
+        ;
+
+        
+    
+    
+            var marker_0a2aad30f27c0ffc10cd3c634daaca1f = L.marker(
+                [50.822638, 4.709018],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_7bc0152e708af52f556a32cc8dfa33a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1af1cbee0715c39d4b5b05ad00d0251 = $(`<div id="html_d1af1cbee0715c39d4b5b05ad00d0251" style="width: 100.0%; height: 100.0%;">Oud-Heverlee/Blanden Heliport</div>`)[0];
+                popup_7bc0152e708af52f556a32cc8dfa33a5.setContent(html_d1af1cbee0715c39d4b5b05ad00d0251);
+            
+        
+
+        marker_0a2aad30f27c0ffc10cd3c634daaca1f.bindPopup(popup_7bc0152e708af52f556a32cc8dfa33a5)
+        ;
+
+        
+    
+    
+            var marker_196ec55c8f485e24c82783d7bb806b74 = L.marker(
+                [55.1397141, -6.9690032],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_482be7dddb667a7f740911c3125d828a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e094a0869e4fb013bfef0365dddb4ef = $(`<div id="html_4e094a0869e4fb013bfef0365dddb4ef" style="width: 100.0%; height: 100.0%;">Bellarena</div>`)[0];
+                popup_482be7dddb667a7f740911c3125d828a.setContent(html_4e094a0869e4fb013bfef0365dddb4ef);
+            
+        
+
+        marker_196ec55c8f485e24c82783d7bb806b74.bindPopup(popup_482be7dddb667a7f740911c3125d828a)
+        ;
+
+        
+    
+    
+            var marker_ea495a024c4ffb933dabff7b10ea9d2e = L.marker(
+                [48.361893, 21.746454],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_fba0e313b0a43f9af717b1d1af0a15ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aff808c1caef05a5f621dd5895c72d53 = $(`<div id="html_aff808c1caef05a5f621dd5895c72d53" style="width: 100.0%; height: 100.0%;">Streda nad Bodrogom Airstrip</div>`)[0];
+                popup_fba0e313b0a43f9af717b1d1af0a15ea.setContent(html_aff808c1caef05a5f621dd5895c72d53);
+            
+        
+
+        marker_ea495a024c4ffb933dabff7b10ea9d2e.bindPopup(popup_fba0e313b0a43f9af717b1d1af0a15ea)
+        ;
+
+        
+    
+    
+            var marker_8c3cce458ca47a9ad11575cb324fe004 = L.marker(
+                [1.63274, 44.64865],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_8d78a8e731310e29ffd04bff8c013696 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6b014625cb24c294fdbc47e9c464dbc = $(`<div id="html_a6b014625cb24c294fdbc47e9c464dbc" style="width: 100.0%; height: 100.0%;">Merca Airport</div>`)[0];
+                popup_8d78a8e731310e29ffd04bff8c013696.setContent(html_a6b014625cb24c294fdbc47e9c464dbc);
+            
+        
+
+        marker_8c3cce458ca47a9ad11575cb324fe004.bindPopup(popup_8d78a8e731310e29ffd04bff8c013696)
+        ;
+
+        
+    
+    
+            var marker_3f5ecf91e292d57495ec73c6bc6d2d67 = L.marker(
+                [42.65839, 24.68383],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_e012baac7370b7d4728b0a63e7d8f860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7077201fa606ff2d5c656fe8fb030632 = $(`<div id="html_7077201fa606ff2d5c656fe8fb030632" style="width: 100.0%; height: 100.0%;">Moskovec Airstrip SSA</div>`)[0];
+                popup_e012baac7370b7d4728b0a63e7d8f860.setContent(html_7077201fa606ff2d5c656fe8fb030632);
+            
+        
+
+        marker_3f5ecf91e292d57495ec73c6bc6d2d67.bindPopup(popup_e012baac7370b7d4728b0a63e7d8f860)
+        ;
+
+        
+    
+    
+            var marker_2c0c63d7b5efc0b63277a13ed345585e = L.marker(
+                [37.883254, -8.448293],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_f4445acc96528dfe25e114af30e8f923 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d01f60118a48d0cbc27cd08dd062794 = $(`<div id="html_0d01f60118a48d0cbc27cd08dd062794" style="width: 100.0%; height: 100.0%;">Pista de Fonte Serne</div>`)[0];
+                popup_f4445acc96528dfe25e114af30e8f923.setContent(html_0d01f60118a48d0cbc27cd08dd062794);
+            
+        
+
+        marker_2c0c63d7b5efc0b63277a13ed345585e.bindPopup(popup_f4445acc96528dfe25e114af30e8f923)
+        ;
+
+        
+    
+    
+            var marker_2d9f740c243c9af75306b45f3b5360d2 = L.marker(
+                [-26.358999252319336, 28.78969955444336],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_ddb00f2139df6f21c0af522466e169e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda3cd1a12318889704489a679d33f7b = $(`<div id="html_bda3cd1a12318889704489a679d33f7b" style="width: 100.0%; height: 100.0%;">Devon Airport</div>`)[0];
+                popup_ddb00f2139df6f21c0af522466e169e1.setContent(html_bda3cd1a12318889704489a679d33f7b);
+            
+        
+
+        marker_2d9f740c243c9af75306b45f3b5360d2.bindPopup(popup_ddb00f2139df6f21c0af522466e169e1)
+        ;
+
+        
+    
+    
+            var marker_d476fc978b0ee0e6f1c6ae2ada8132a0 = L.marker(
+                [44.85499954223633, 38.63999938964844],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_b0b26549e93063464970eb4b57f475cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_221a2bf90dca6fbb540d6aa4e49612ba = $(`<div id="html_221a2bf90dca6fbb540d6aa4e49612ba" style="width: 100.0%; height: 100.0%;">Severskaya Airfield</div>`)[0];
+                popup_b0b26549e93063464970eb4b57f475cc.setContent(html_221a2bf90dca6fbb540d6aa4e49612ba);
+            
+        
+
+        marker_d476fc978b0ee0e6f1c6ae2ada8132a0.bindPopup(popup_b0b26549e93063464970eb4b57f475cc)
+        ;
+
+        
+    
+    
+            var marker_16f177d1e0e07a6fdd86f581ddab644c = L.marker(
+                [11.59668, 43.14119],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_60002967a7bfffb6b5701b37503804d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc6c6e7c19af62a1ec058859ffafe828 = $(`<div id="html_cc6c6e7c19af62a1ec058859ffafe828" style="width: 100.0%; height: 100.0%;">Djibouti Presidential Heliport</div>`)[0];
+                popup_60002967a7bfffb6b5701b37503804d5.setContent(html_cc6c6e7c19af62a1ec058859ffafe828);
+            
+        
+
+        marker_16f177d1e0e07a6fdd86f581ddab644c.bindPopup(popup_60002967a7bfffb6b5701b37503804d5)
+        ;
+
+        
+    
+    
+            var marker_ceff6addd53ed94cfc830add369ac9bd = L.marker(
+                [48.872501373291016, 7.48638916015625],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_09c07439f1a725f23582ec647cfdced1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3303bfc9915f1366adafa6d023d7cdb9 = $(`<div id="html_3303bfc9915f1366adafa6d023d7cdb9" style="width: 100.0%; height: 100.0%;">Centre Hospitalier Heliport</div>`)[0];
+                popup_09c07439f1a725f23582ec647cfdced1.setContent(html_3303bfc9915f1366adafa6d023d7cdb9);
+            
+        
+
+        marker_ceff6addd53ed94cfc830add369ac9bd.bindPopup(popup_09c07439f1a725f23582ec647cfdced1)
+        ;
+
+        
+    
+    
+            var marker_df2809f57f805c5216474eb3e0efacc8 = L.marker(
+                [42.921698, 133.904438],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_8dd8ac00ecd37b27edbc83af4dd92a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_852a95e033f8518481063e1b22583af1 = $(`<div id="html_852a95e033f8518481063e1b22583af1" style="width: 100.0%; height: 100.0%;">Preobrazheniye Airport</div>`)[0];
+                popup_8dd8ac00ecd37b27edbc83af4dd92a05.setContent(html_852a95e033f8518481063e1b22583af1);
+            
+        
+
+        marker_df2809f57f805c5216474eb3e0efacc8.bindPopup(popup_8dd8ac00ecd37b27edbc83af4dd92a05)
+        ;
+
+        
+    
+    
+            var marker_48e8cddde99f0108eb618c1b80ee428d = L.marker(
+                [43.427101, -3.82001],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_4bedc47b020349116efd7440c102b4ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6df531ecfcc1b25b04747ddc4f38d51c = $(`<div id="html_6df531ecfcc1b25b04747ddc4f38d51c" style="width: 100.0%; height: 100.0%;">Seve Ballesteros-Santander Airport</div>`)[0];
+                popup_4bedc47b020349116efd7440c102b4ca.setContent(html_6df531ecfcc1b25b04747ddc4f38d51c);
+            
+        
+
+        marker_48e8cddde99f0108eb618c1b80ee428d.bindPopup(popup_4bedc47b020349116efd7440c102b4ca)
+        ;
+
+        
+    
+    
+            var marker_6dcfd1bd2f658118f9be0435ea8e1bb5 = L.marker(
+                [49.111401, 4.36694],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_f37b608db0a5c21b95c6fcbd2e09ac4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9074ea7c5446947f6bdcbef6429b9000 = $(`<div id="html_9074ea7c5446947f6bdcbef6429b9000" style="width: 100.0%; height: 100.0%;">Mourmelon Air Base</div>`)[0];
+                popup_f37b608db0a5c21b95c6fcbd2e09ac4e.setContent(html_9074ea7c5446947f6bdcbef6429b9000);
+            
+        
+
+        marker_6dcfd1bd2f658118f9be0435ea8e1bb5.bindPopup(popup_f37b608db0a5c21b95c6fcbd2e09ac4e)
+        ;
+
+        
+    
+    
+            var marker_df94f8f1da06b1e9d9e30a512d80f70f = L.marker(
+                [24.178699493408203, 23.31399917602539],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_59b7aaf64ca4b148ceb0b0d8d770de61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178b359bf5f453a3da2f9ee88a8984a7 = $(`<div id="html_178b359bf5f453a3da2f9ee88a8984a7" style="width: 100.0%; height: 100.0%;">Kufra Airport</div>`)[0];
+                popup_59b7aaf64ca4b148ceb0b0d8d770de61.setContent(html_178b359bf5f453a3da2f9ee88a8984a7);
+            
+        
+
+        marker_df94f8f1da06b1e9d9e30a512d80f70f.bindPopup(popup_59b7aaf64ca4b148ceb0b0d8d770de61)
+        ;
+
+        
+    
+    
+            var marker_59acd7b35121c1335b9ae9bc4050b611 = L.marker(
+                [43.885661, 18.068562],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_9afaed825f24ea886181a0f18d788462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2586834bec7dbf86ee01cdd6b94b2ea9 = $(`<div id="html_2586834bec7dbf86ee01cdd6b94b2ea9" style="width: 100.0%; height: 100.0%;">Kreševo Airstrip</div>`)[0];
+                popup_9afaed825f24ea886181a0f18d788462.setContent(html_2586834bec7dbf86ee01cdd6b94b2ea9);
+            
+        
+
+        marker_59acd7b35121c1335b9ae9bc4050b611.bindPopup(popup_9afaed825f24ea886181a0f18d788462)
+        ;
+
+        
+    
+    
+            var marker_297dd50435f9f345e129eb8437645527 = L.marker(
+                [52.8276, 1.0037],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_acbbcc8e17c8596ccdf2b91f294ff0ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddbdc423aba0b7bc9802a180c8ba82d0 = $(`<div id="html_ddbdc423aba0b7bc9802a180c8ba82d0" style="width: 100.0%; height: 100.0%;">Blue Tile Farm Airstrip</div>`)[0];
+                popup_acbbcc8e17c8596ccdf2b91f294ff0ba.setContent(html_ddbdc423aba0b7bc9802a180c8ba82d0);
+            
+        
+
+        marker_297dd50435f9f345e129eb8437645527.bindPopup(popup_acbbcc8e17c8596ccdf2b91f294ff0ba)
+        ;
+
+        
+    
+    
+            var marker_1d2358fd74385d5fbb65b521156931fc = L.marker(
+                [-3.4830000400543213, 12.300000190734863],
+                {}
+            ).addTo(map_68b79e8bbb56de6e2a5f42cad7f2eaab);
+        
+    
+        var popup_d40eb03dd80f4e50234cd316487eb731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_220afb84c0c6ca98b9e661ce393591e7 = $(`<div id="html_220afb84c0c6ca98b9e661ce393591e7" style="width: 100.0%; height: 100.0%;">Kibangou Airport</div>`)[0];
+                popup_d40eb03dd80f4e50234cd316487eb731.setContent(html_220afb84c0c6ca98b9e661ce393591e7);
+            
+        
+
+        marker_1d2358fd74385d5fbb65b521156931fc.bindPopup(popup_d40eb03dd80f4e50234cd316487eb731)
+        ;
+
+        
+    
+</script>
+</html>
