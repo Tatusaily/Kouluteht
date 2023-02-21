@@ -26,9 +26,15 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if text_rect.collidepoint(pygame.mouse.get_pos()):
+                print("KOSKEE!")
 
-    text = menufont.render("MOI!", True, "WHITE")
-    text_rect = text.get_rect(center=(screenx/2, screeny/3))
-    screen.blit(text, text_rect)
+    menufont = pygame.font.SysFont("Comic Sans", 35, True)
+    text = menufont.render("MOI!", True, "WHITE")                  #tekee tekstistä surfacen, koko päätellään fontin mukaan
+    text_rect = text.get_rect(center=(screenx/2, screeny/3))       #tekee text-surfacen kokoinen suorakulmio ja laitetaan se tiettyyn kohtaan
+    screen.blit(text, text_rect)                                   #piirretään "text"-pinta "text_rect" kulmion sijaintiin.
+
+
 
     pygame.display.update()
