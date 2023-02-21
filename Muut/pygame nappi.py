@@ -9,6 +9,7 @@ screenx = 800
 screeny = 600
 screen = pygame.display.set_mode((screenx, screeny))
 
+""" Tää CLASSI ei tee mitään kun en saanut sitä toimimaan :(
 class MENUBUTTON:
     #Nappi jossa on tekstiä
     #Nappi haluaa tekstin ja sijainnin
@@ -18,7 +19,7 @@ class MENUBUTTON:
     def draw(self, x, y):
         text_rect = text.get_rect(center=(x, y))
         screen.blit(text, text_rect)
-
+"""
 
 
 while True:
