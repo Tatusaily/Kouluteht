@@ -32,7 +32,7 @@ while True:
                 print("KOSKEE!")
 
     menufont = pygame.font.SysFont("Comic Sans", 35, True)
-    text = menufont.render("MOI!", True, "WHITE")                  #tekee tekstistä surfacen, koko päätellään fontin mukaan
+    text = menufont.render("Paina mua!", True, "WHITE")                  #tekee tekstistä surfacen, koko päätellään fontin mukaan
     text_rect = text.get_rect(center=(screenx/2, screeny/3))       #tekee text-surfacen kokoinen suorakulmio ja laitetaan se tiettyyn kohtaan
     screen.blit(text, text_rect)                                   #piirretään "text"-pinta "text_rect" kulmion sijaintiin.
 
