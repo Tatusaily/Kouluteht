@@ -4,19 +4,19 @@ import sys
 pygame.init()
 
 #Vakiot
-menufont = pygame.font.SysFont("Arial", 24, True)
+menufont = pygame.font.SysFont("Comic Sans", 35, True)
 screenx = 800
 screeny = 600
 screen = pygame.display.set_mode((screenx, screeny))
 
-class MENUBUTTON(txt, x, y):
+class MENUBUTTON:
     #Nappi jossa on tekstiä
     #Nappi haluaa tekstin ja sijainnin
     def __init__(self, txt, x, y):
-        text = menufont.render(self.txt, True, "WHITE")
+        text = menufont.render(txt, True, "WHITE")
 
     def draw(self, x, y):
-        text_rect = text.get_rect(center=(self.x, self.y))
+        text_rect = text.get_rect(center=(x, y))
         screen.blit(text, text_rect)
 
 
@@ -27,5 +27,8 @@ while True:
             pygame.quit()
             sys.exit()
 
-    MENUBUTTON.__init__("Moi", )
+    text = menufont.render("MOI!", True, "WHITE")
+    text_rect = text.get_rect(center=(screenx/2, screeny/3))
+    screen.blit(text, text_rect)
+
     pygame.display.update()
