@@ -8,6 +8,7 @@ Kirjoita pääohjelma, jossa luot uuden auton (rekisteritunnus ABC-123, huippuno
 Tulosta pääohjelmassa sen jälkeen luodun auton kaikki ominaisuudet.
 """
 
+
 class Auto:
     def __init__(self, rek: str, nop: int):
         self.rekisteritunnus = rek
