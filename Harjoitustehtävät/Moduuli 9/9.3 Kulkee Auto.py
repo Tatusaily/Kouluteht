@@ -7,6 +7,7 @@ Esimerkki: auto-olion tämänhetkinen kuljettu matka on 2000 km.
 Nopeus on 60 km/h. Metodikutsu auto.kulje(1.5) kasvattaa kuljetun matkan lukemaan 2090 km.
 """
 
+
 class Auto:
     def __init__(self, rek: str, nop: int):
         self.rekisteritunnus = rek
@@ -32,10 +33,11 @@ class Auto:
 
         return
 
-    def kulje(self,tunti):
+    def kulje(self, tunti):
         self.kulj_matka += self.nopeus * tunti
 
         return
+
 
 # Pääohjelma
 uusiauto = Auto("ABC-123", 142)
