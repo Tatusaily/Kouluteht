@@ -1,5 +1,6 @@
 import pygame
 import sys
+from pygame import Vector2
 
 # Game On
 if __name__ == '__main__':
@@ -45,6 +46,19 @@ if __name__ == '__main__':
             # Päivitetään rect oikeaan koordinaatiin
             self.rect = self.glyph.get_rect(center=(self.x, self.y))
 
+    class Snake:
+        def __init__(self, length):
+            self.body = []
+            # TODO: Kärmeelle kehonrakennus.
+            #   Käärmeelle tulee kehoon satunnainen määrä paloja. Myöhemmin enemmän?
+            #   Kaikki palat tulee samaan kohtaan:
+            #       Kun käärme lähtee liikkeelle niin se ikäänkuin kasvaa siitä pisteestä.
+            #   Sit käärmeelle suunta ja nopeus
+            #   Käärme vois alkuun liikkuu satunnaisiin suuntiin.
+            #       Myöhemmin etsii pelaajaa?
+
+            #for i in length:
+                #self.body.append(Vector2(x, y))
 
     def input_tick():
         print(f"{int(Player.x/gridsize+1)}, {int(Player.y/gridsize+1)}")
