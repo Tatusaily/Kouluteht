@@ -10,11 +10,11 @@ Tulosta pääohjelmassa sen jälkeen luodun auton kaikki ominaisuudet.
 
 
 class Auto:
-    def __init__(self, rek: str, nop: int):
+    def __init__(self, rek: str, nop: int, nopeus = 0, matka = 0):
         self.rekisteritunnus = rek
         self.huippunopeus = nop
-        self.nopeus = 0
-        self.kulj_matka = 0
+        self.nopeus = nopeus
+        self.kulj_matka = matka
 
     def __str__(self):
         return f"Auton tiedot:\n" \

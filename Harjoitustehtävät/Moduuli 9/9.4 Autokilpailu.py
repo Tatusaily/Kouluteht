@@ -50,7 +50,7 @@ class Auto:
 autodict = {}
 for n in range(1,11):
     rek = f"ABC-{n:03d}"
-    nop = random.randint(100,200)
+    nop = random.randint(100, 200)
     autodict[f"Auto{n}"] = Auto(rek, nop)
 
 maalissa = False
