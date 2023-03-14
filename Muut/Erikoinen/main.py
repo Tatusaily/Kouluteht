@@ -5,12 +5,12 @@ import sys
 if __name__ == '__main__':
     # Vakiot ja bloat
     pygame.init()
-    window_width = 800
-    window_height = 600
     gridsize = 40
+    window_width = gridsize*10
+    window_height = gridsize*10
     screen = pygame.display.set_mode((window_width, window_height))
     gameclock = pygame.time.Clock()
-    charfont = pygame.font.SysFont("Arial", gridsize-5)
+    charfont = pygame.font.SysFont("Gotham", gridsize)
 
     class PlayerChar:
         speed = gridsize
@@ -25,19 +25,29 @@ if __name__ == '__main__':
         def move(self, direction):
             if direction == "right":
                 self.x = self.x + self.speed
-                self.rect.move_ip(self.speed, 0)
             elif direction == "left":
                 self.x = self.x - self.speed
-                self.rect.move_ip(-self.speed, 0)
             elif direction == "up":
                 self.y = self.y - self.speed
-                self.rect.move_ip(0, -self.speed)
             elif direction == "down":
                 self.y = self.y + self.speed
-                self.rect.move_ip(0, self.speed)
+
+            # Rajoitetaan self koordinaatit ruudukkoon:
+            if self.x <= 0:
+                self.x = gridsize/2
+            if self.x > window_width:
+                self.x = window_width - gridsize/2
+            if self.y <= 0:
+                self.y = gridsize/2
+            if self.y > window_height:
+                self.y = window_height - gridsize/2
+
+            # Päivitetään rect oikeaan koordinaatiin
+            self.rect = self.glyph.get_rect(center=(self.x, self.y))
+
 
     def input_tick():
-        print(f"{int(Player.x/gridsize)}, {int(Player.y/gridsize)}")
+        print(f"{int(Player.x/gridsize+1)}, {int(Player.y/gridsize+1)}")
 
     def draw_grid():
         for x in range(0, window_width, gridsize):
@@ -50,8 +60,6 @@ if __name__ == '__main__':
     testblock = pygame.Rect((4*gridsize, 4*gridsize), (gridsize, gridsize))
 
     while True:
-        if Player.rect.colliderect(testblock):
-            print("KOSKEE")
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 print("QUIT")
@@ -67,6 +75,9 @@ if __name__ == '__main__':
                 if event.key == pygame.K_RIGHT:
                     Player.move("right")
                 input_tick()
+        if Player.rect.colliderect(testblock):
+            print("KOSKEE")
+            Player = PlayerChar()
 
         # Draw UI
         screen.fill("Black")
