@@ -36,6 +36,7 @@ class Auto:
 
         return
 
+
 # Pääohjelma
 uusiauto = Auto("ABC-123", 142)
 print(f"{uusiauto}\n")
