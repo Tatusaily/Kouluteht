@@ -39,7 +39,7 @@ class Auto:
 
         return
 
-    def kulje(self,tunti):
+    def kulje(self, tunti):
         self.kulj_matka += self.nopeus * tunti
 
         return
@@ -47,16 +47,18 @@ class Auto:
 
 # Pääohjelma
 # Tehdään kisaan osallistuvat autot
-autodict = {}
-for n in range(1,11):
-    rek = f"ABC-{n:03d}"
+autolist = []
+for n in range(10):
+    rek = f"ABC-{n+1}"
     nop = random.randint(100, 200)
-    autodict[f"Auto{n}"] = Auto(rek, nop)
+    auto = Auto(rek, nop)
+    autolist.append(auto)
+
 
 maalissa = False
 kisa = True
 while kisa == True:  # Tähän vois kirjottaa while kisa: mutta se on mun mielestä vähän huonosti luettavaa
-    for auto in autodict.values():
+    for auto in autolist:
         auto.kiihdytä(random.randint(-10, 15))
         auto.kulje(1)
         if auto.kulj_matka >= 10000:
@@ -73,7 +75,7 @@ print(f"{'LOPPUTILANNE':{'-'}{'^'}{72}}\n"
       f"{'-'*72}")
 # Ja sitten täytetään taulukkoon data
 # Tän vois viel järjestää jotenkin niin olis tosi hyvä
-for auto in autodict.values():
+for auto in autolist:
     print(f"||{auto.rekisteritunnus:^15}|{str(auto.kulj_matka)+' km':^15}|"
           f"{str(auto.nopeus)+' km/h':^15}|{str(auto.huippunopeus)+' km/h':^20}||\n"
           f"{'-'*72}")

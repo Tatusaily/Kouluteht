@@ -16,7 +16,7 @@ class Hissi:
     def siirry_kerrokseen(self, kerros):
         # Tarkistetaan syöte
         if kerros < self.alinkerros or kerros > self.ylinkerros:
-            print(f"Valittu kerros ei ole saatavilla")
+            print(f"{kerros}. kerros ei ole saatavilla")
             return
         print(f"Nykyinen kerros:{self.nykyinenkerros}")
         # Siirrytään
@@ -35,8 +35,9 @@ class Hissi:
         return
 
 
-hissi1 = Hissi(10, 1)
+hissi1 = Hissi(15, 1)
 hissi1.siirry_kerrokseen(200)
-hissi1.siirry_kerrokseen(6)
+hissi1.siirry_kerrokseen(3)
+hissi1.siirry_kerrokseen(5)
 hissi1.siirry_kerrokseen(1)
 
