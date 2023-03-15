@@ -30,12 +30,10 @@ class Auto:
             self.nopeus = 0
         elif self.nopeus > self.huippunopeus:
             self.nopeus = self.huippunopeus
-
         return
 
     def kulje(self, tunti):
         self.kulj_matka += self.nopeus * tunti
-
         return
 
 

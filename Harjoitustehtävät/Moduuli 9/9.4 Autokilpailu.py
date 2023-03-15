@@ -72,6 +72,7 @@ print(f"{'LOPPUTILANNE':{'-'}{'^'}{72}}\n"
       f"||{'Rekisteri':^15}|{'Matka':^15}|{'Nopeus':^15}|{'Huippunopeus':^20}||\n"
       f"{'-'*72}")
 # Ja sitten täytetään taulukkoon data
+# Tän vois viel järjestää jotenkin niin olis tosi hyvä
 for auto in autodict.values():
     print(f"||{auto.rekisteritunnus:^15}|{str(auto.kulj_matka)+' km':^15}|"
           f"{str(auto.nopeus)+' km/h':^15}|{str(auto.huippunopeus)+' km/h':^20}||\n"
