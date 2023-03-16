@@ -1,9 +1,8 @@
-import pygame
-import sys
-from pygame import Vector2
-
-# Game On
 if __name__ == '__main__':
+    import pygame
+    import sys
+    from Muut.Hymyprint import hymyprint as hymy
+
     # Vakiot ja bloat
     pygame.init()
     gridsize = 40
@@ -72,6 +71,7 @@ if __name__ == '__main__':
     print("Main")
     Player = PlayerChar()
     testblock = pygame.Rect((4*gridsize, 4*gridsize), (gridsize, gridsize))
+    hymy()
 
     while True:
         for event in pygame.event.get():
