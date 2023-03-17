@@ -1,11 +1,3 @@
-"""
-Jatka edellisen tehtävän ohjelmaa siten, että teet Talo-luokan.
-Talon alustajaparametreina annetaan alimman ja ylimmän kerroksen numero sekä hissien lukumäärä.
-Talon luonnin yhteydessä talo luo tarvittavan määrän hissejä.
-Hissien lista tallennetaan talon ominaisuutena.
-Kirjoita taloon metodi aja_hissiä, joka saa parametreinaan hissin numeron ja kohdekerroksen.
-Kirjoita pääohjelmaan lauseet talon luomiseksi ja talon hisseillä ajelemiseksi.
-"""
 from teht1 import Hissi
 
 
@@ -23,6 +15,10 @@ class Talo:
         print(f"Siirretään hissi {hissinro} kerrokseen {kohdekerros}")
         self.hissilista[hissinro-1].siirry_kerrokseen(kohdekerros)
 
+    def palohälytys(self):
+        for hissi in self.hissilista:
+            hissi.siirry_kerrokseen(self.alinkrs)
+
 
 if __name__ == '__main__':
     isotalo = Talo(20, 1, 5)
@@ -31,6 +27,5 @@ if __name__ == '__main__':
     print(f"Ajetaan isontalon 2. hissiä kerrokseen 10:")
     isotalo.aja_hissiä(2, 10)
 
-
-
-
+    print("!PALOHÄLYTYS!")
+    isotalo.palohälytys()
