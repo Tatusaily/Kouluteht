@@ -3,7 +3,6 @@ class Hissi:
         self.ylinkerros = ylin
         self.alinkerros = alin
         self.nykyinenkerros = alin
-        print(f"Luotiin hissi, jonka ylimmät ja alimmat kerrokset ovat: {ylin} ja {alin}")
 
     def kerros_ylös(self):
         self.nykyinenkerros += 1
@@ -35,10 +34,10 @@ class Hissi:
         return
 
 
-hissi1 = Hissi(15, 1)
-hissi1.siirry_kerrokseen(200)
-hissi1.siirry_kerrokseen(3)
-hissi1.siirry_kerrokseen(5)
-hissi1.siirry_kerrokseen(5)
-hissi1.siirry_kerrokseen(1)
-
+if __name__ == '__main__':
+    hissi1 = Hissi(15, 1)
+    hissi1.siirry_kerrokseen(200)
+    hissi1.siirry_kerrokseen(3)
+    hissi1.siirry_kerrokseen(5)
+    hissi1.siirry_kerrokseen(5)
+    hissi1.siirry_kerrokseen(1)

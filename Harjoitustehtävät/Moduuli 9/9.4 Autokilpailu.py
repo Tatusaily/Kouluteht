@@ -14,6 +14,7 @@ Lopuksi tulostetaan kunkin auton kaikki ominaisuudet selkeäksi taulukoksi muoto
 """
 import random
 
+
 class Auto:
     def __init__(self, rek: str, nop: int):
         self.rekisteritunnus = rek
@@ -49,9 +50,9 @@ class Auto:
 # Tehdään kisaan osallistuvat autot
 autolist = []
 for n in range(10):
-    rek = f"ABC-{n+1}"
-    nop = random.randint(100, 200)
-    auto = Auto(rek, nop)
+    rekisteri = f"ABC-{n+1}"
+    huippunop = random.randint(100, 200)
+    auto = Auto(rekisteri, huippunop)
     autolist.append(auto)
 
 
