@@ -65,7 +65,3 @@ if __name__ == '__main__':
 
     print(f"Ajetaan talon 2. hissiä kerrokseen 10:")
     isotalo.aja_hissiä(2, 10)
-
-
-
-
