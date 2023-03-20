@@ -16,10 +16,35 @@ class Julkaisu:
 
 
 class Kirja(Julkaisu):
-    def tulosta_tiedot(self,):
+    def __init__(self, nimi, kirjoittaja, sivut):
+        self.kirjoittaja = kirjoittaja
+        self.sivut = sivut
+        super().__init__(nimi)
+
+    def tulosta_tiedot(self):
         # print all
+        print(f"{'-'*40}\n"
+              f"{'Kirjan nimi: ':<25} {self.nimi:>15}\n"
+              f"{'Kirjan kirjoittaja: ':<25} {self.kirjoittaja:>15}\n"
+              f"{'Kirjan sivumäärä: ':<25} {self.sivut:>15}\n"
+              f"{'-'*40}")
 
 
 class Lehti(Julkaisu):
+    def __init__(self, nimi, toimittaja):
+        self.toimittaja = toimittaja
+        super().__init__(nimi)
+
     def tulosta_tiedot(self):
         # print all
+        print(f"{'-'*40}\n"
+              f"{'Lehden nimi: ':<25} {self.nimi:>15}\n"
+              f"{'Lehden päätoimittaja: ':<25} {self.toimittaja:>15}\n"
+              f"{'-'*40}")
+
+
+akkari = Lehti("Aku Ankka", "Aki Hyyppä")
+hytti = Kirja("Hytti n:o 6", "Rosa Liksom", 200)
+
+akkari.tulosta_tiedot()
+hytti.tulosta_tiedot()
