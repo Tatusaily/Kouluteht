@@ -62,7 +62,7 @@ class Kilpailu:
     def kilpailu_ohi(self):
         ohi = False
         for osallistuja in self.osallistujalista:
-            if osallistuja.kulj_matka >= 10000:
+            if osallistuja.kulj_matka >= self.pituus:
                 ohi = True
         return ohi
 
