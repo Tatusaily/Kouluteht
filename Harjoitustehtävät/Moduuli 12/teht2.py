@@ -16,6 +16,7 @@ def kelvin_to_celcius(kelvin):
     return celcius
 
 
+# get_coords ottaa kaupungin nimellä koordinaatit. kaupungit näytetään myöhemmin käyttäjälle
 def get_coords(cityname):
     query = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={cityname}&limit={5}&appid={API_KEY}")
     # Täältä tulee lista dictejä
@@ -23,6 +24,7 @@ def get_coords(cityname):
     return query.json()
 
 
+# ottaa kaupungin koordinaateilla säätiedot. koordinaatit tulee get_coords -funktiolla
 def get_weather(city):
     lat = city['lat']
     lon = city['lon']
@@ -37,7 +39,8 @@ def get_weather(city):
 # API KEY
 API_KEY = "337b16224b8ccdfd01fba013b925b025"
 
-# Haetaan tieto, tulostetaan kaupungit ja otetaan käyttäjän valinta
+# Haetaan tieto, tulostetaan kaupungit ja otetaan käyttäjän valinta'
+# Tähän vois laittaa virheenkäsittelyä error-koodeilla
 cityn = input("Nimi")
 vastaus = get_coords(cityn)
 n = 0
