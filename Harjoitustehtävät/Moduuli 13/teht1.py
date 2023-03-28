@@ -11,10 +11,9 @@ app = Flask(__name__)
 @app.route('/alkuluku/<num>')
 # TODO pitää laittaa virheenkäsittely
 def alkulukutest(num):
-    # args = request.args
-    # luku = int(args.get("alkuluku"))
     luku = int(num)
     on_alku = True
+
     # Erityiset
     if luku == 1:
         on_alku = False
@@ -27,6 +26,7 @@ def alkulukutest(num):
                 print(f"{luku} On jaollinen luvulla {i}!")
                 on_alku = False
                 break
+
     return {"Number": num, "isPrime": on_alku}
 
 
