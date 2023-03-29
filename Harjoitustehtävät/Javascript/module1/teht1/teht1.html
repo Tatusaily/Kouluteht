@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="teht1.css" rel="stylesheet">
+    <script src="teht1.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>T-1 Laskin</title>
 </head>
 <body>
-
+    <div id="content">
+        <form id="inputs">
+            <label for="ekanum">Ensimmäinen Luku:</label><br>
+            <input type="number" id="ekanum" name="ekanum"><br><br>
+            <label for="tokanum">Toinen Luku:</label><br>
+            <input type="number" id="tokanum" name="tokanum"><br>
+            <button type="button" onclick="laske(document.getElementById('ekanum').value, document.getElementById('tokanum').value)"> Laske </button>
+        </form>
+        <form id="outputs">
+            <label for="summa">Summa:</label>
+            <input type="text" id="summa" name="summa"><br>
+            <label for="tulo">Tulo:</label>
+            <input type="text" id="tulo" name="tulo"><br>
+            <label for="keskiarvo">Keskiarvo:</label>
+            <input type="text" id="keskiarvo" name="keskiarvo"><br>
+        </form>
+    </div>
 </body>
 </html>

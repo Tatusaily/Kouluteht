@@ -1,0 +1,21 @@
+#content{
+    width: 600px;
+    background-color: navajowhite;
+    margin: 10px;
+    overflow: auto;
+}
+#content form{
+
+}
+#inputs{
+    float: left;
+    padding: 5px;
+    margin: 10px;
+}
+#outputs{
+    float: right;
+}
+#outputs input{
+    padding: 5px;
+    margin: 10px;
+}
