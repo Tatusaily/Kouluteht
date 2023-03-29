@@ -1,2 +1,2 @@
-# Python-asiat
-Tässä on mun kouluun liittyvät Python asiat.
+# Kouluteht
+Tässä on mun kouluun liittyvät Python, Javascript yms tehtävät.
