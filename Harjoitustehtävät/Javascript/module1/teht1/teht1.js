@@ -5,7 +5,7 @@ function tulo(eka, toka){
     return eka * toka;
 }
 function keskiarvo(eka, toka){
-    return eka+toka/2;
+    return (eka+toka)/2;
 }
 function laske(eka, toka){
     console.log(eka, toka)
