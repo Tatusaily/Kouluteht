@@ -14,8 +14,8 @@ function laske(eka, toka){
     console.log(keskiarvo(eka, toka))
     // Jos näitä ei parsee niin sit ne on stringejä.
     // Miksi? Ne osoitetaan HTML:ssä numeroiksi. Melkoinen työmaa.
-    eka = parseInt(eka)
-    toka = parseInt(toka)
+    eka = Number(eka)
+    toka = Number(toka)
     document.getElementById("summa").value = summa(eka, toka)
     document.getElementById("tulo").value = tulo(eka, toka)
     document.getElementById("keskiarvo").value = keskiarvo(eka, toka)
