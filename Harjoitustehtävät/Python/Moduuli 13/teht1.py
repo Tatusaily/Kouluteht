@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 
 @app.route('/alkuluku/<num>')
-# TODO pitää laittaa virheenkäsittely
 def alkulukutest(num):
     luku = int(num)
     on_alku = True
@@ -23,7 +22,6 @@ def alkulukutest(num):
     else:
         for i in range(3, luku, 2):
             if luku % i == 0:
-                print(f"{luku} On jaollinen luvulla {i}!")
                 on_alku = False
                 break
 
