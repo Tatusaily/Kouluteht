@@ -22,14 +22,12 @@ app = Flask(__name__)
 
 @app.route('/kenttä/<icao>')
 def airportfinder(icao):
-    # Jostain syystä suoritus ei ikinä pysähdy ekaan virheeseen, vaan tulee aina vaan viimeinen eli 404.
+    # Aika omituinen tapa napata errori, mutta toimii.
     try:
-        try:
+        if icao.isalpha():
             icao = icao.upper()
-        except AttributeError:
-            return Response(
-                response="This is not a valid ICAO code. Error code 400",
-                status=400, mimetype="application/json")
+        else:
+            raise AttributeError
 
         query = f"SELECT name, municipality from airport WHERE ident= '{icao}'"
         kursori = yhteys.cursor()
@@ -39,10 +37,21 @@ def airportfinder(icao):
         jsonvast = json.dumps(tulos)
         return Response(response=jsonvast, mimetype="application/json")
 
+    except AttributeError:
+        return Response(
+            response="This is not a valid ICAO code.",
+            status=400, mimetype="application/json")
     except TypeError:
-        return Response(response="Can't find an airport with that ICAO -code. Error code 404",
+        return Response(response="Can't find an airport with that ICAO -code.",
                         status=404, mimetype="application/json")
 
+
+# Jos käyttäjä kirjoittaa urlin väärin niin napataan se virhe
+# En tee sillä virheellä mitään, mutta erotan sen muista virheistä tällä.
+@app.errorhandler(404)
+def notfound(error):
+    return Response(response=f"{error}",
+                    status=404, mimetype="application/json")
 
 
 if __name__ == '__main__':
