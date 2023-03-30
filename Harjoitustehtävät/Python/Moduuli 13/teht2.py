@@ -22,20 +22,19 @@ app = Flask(__name__)
 
 @app.route('/kenttä/<icao>')
 def airportfinder(icao):
-    # Aika omituinen tapa napata errori, mutta toimii.
     try:
-        if icao.isalpha():
-            icao = icao.upper()
-        else:
+        if icao.isnumeric:
             raise AttributeError
+        else:
+            icao = icao.upper()
 
-        query = f"SELECT name, municipality from airport WHERE ident= '{icao}'"
-        kursori = yhteys.cursor()
-        kursori.execute(query)
-        tulos = kursori.fetchone()
-        tulos = {"ICAO": icao, "Name": tulos[0], "Municipality": tulos[1]}
-        jsonvast = json.dumps(tulos)
-        return Response(response=jsonvast, mimetype="application/json")
+            query = f"SELECT name, municipality from airport WHERE ident= '{icao}'"
+            kursori = yhteys.cursor()
+            kursori.execute(query)
+            tulos = kursori.fetchone()
+            tulos = {"ICAO": icao, "Name": tulos[0], "Municipality": tulos[1]}
+            jsonvast = json.dumps(tulos)
+            return Response(response=jsonvast, mimetype="application/json")
 
     except AttributeError:
         return Response(
