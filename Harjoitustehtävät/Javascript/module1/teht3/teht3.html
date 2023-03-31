@@ -4,7 +4,7 @@
     <link href="teht3.css" rel="stylesheet">
     <script src="teht3.js"></script>
     <meta charset="UTF-8">
-    <title>T-1 Laskin</title>
+    <title>T-3Laskin</title>
 </head>
 <body>
     <div id="content">
@@ -12,10 +12,13 @@
             <label for="ekanum">Ensimmäinen Luku:</label><br>
             <input type="number" id="ekanum" name="ekanum"><br><br>
             <label for="tokanum">Toinen Luku:</label><br>
-            <input type="number" id="tokanum" name="tokanum"><br>
+            <input type="number" id="tokanum" name="tokanum"><br><br>
+            <label for="kolmasnum">Kolmas Luku:</label><br>
+            <input type="number" id="kolmasnum" name="kolmasnum"><br>
             <button type="button"
                     onclick="laske(document.getElementById('ekanum').value,
-                    document.getElementById('tokanum').value)">
+                    document.getElementById('tokanum').value,
+                    document.getElementById('kolmasnum').value)">
                 Laske </button>
         </form>
         <form id="outputs">
