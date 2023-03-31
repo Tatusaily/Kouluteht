@@ -10,3 +10,6 @@ function summari2() {
     // Näytetään niiden summa
     alert(ekaluku+tokaluku)
 }
+
+`${dd}dd`
+``
