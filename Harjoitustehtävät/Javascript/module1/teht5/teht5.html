@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="teht5.js"></script>
+    <title>Leap Year Checker</title>
+</head>
+<body style="background-color: black; font-size: 30px">
+    <p id="target"></p>
+    <script onload>
+      year = prompt("Input a year and I shall see if it is a leap year:")
+      if(leapYearCheck(year)){
+        document.getElementById("target").innerHTML = "The given year is a leap year!"
+        document.getElementById("target").style.color = "green"
+      } else{
+        document.getElementById("target").innerHTML = "The given year is not a leap year!"
+        document.getElementById("target").style.color = "red"
+      }
+    </script>
+</body>
+</html>
