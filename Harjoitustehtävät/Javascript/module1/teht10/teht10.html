@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="teht10.js"></script>
+    <link href="teht10.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Dice Roller</title>
+</head>
+<body>
+<h1>Summer:</h1>
+    <form>
+        <label for="num">Amout of dice:</label><br>
+        <input type="number" id="num" name="num"><br>
+        <label for="sum">Wanted sum of dice:</label><br>
+        <input type="number" id="sum" name="sum"><br>
+        <button type="button"
+            onclick="predictor(document.getElementById('num').value, document.getElementById('sum').value)">
+            CALCULATE</button><br><br>
+        <div id="outputdiv">
+            <label for="output_sum">Probability to get sum of </label>
+            <input type="text" id="output_sum" name="output_sum">
+            <label for="output_%">is</label>
+            <input type="text" id="output_%" name="output_%"><p>%</p>
+        </div>
+    </form>
+</body>
+</html>
