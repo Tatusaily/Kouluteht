@@ -4,10 +4,10 @@
     <script src="teht10.js"></script>
     <link href="teht10.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Dice Roller</title>
+    <title>Dice Calculator</title>
 </head>
 <body>
-<h1>Summer:</h1>
+<h1>Calculate dice probabilities:</h1>
     <form>
         <label for="num">Amout of dice:</label><br>
         <input type="number" id="num" name="num"><br>
@@ -16,12 +16,8 @@
         <button type="button"
             onclick="predictor(document.getElementById('num').value, document.getElementById('sum').value)">
             CALCULATE</button><br><br>
-        <div id="outputdiv">
-            <label for="output_sum">Probability to get sum of </label>
-            <input type="text" id="output_sum" name="output_sum">
-            <label for="output_%">is</label>
-            <input type="text" id="output_%" name="output_%"><p>%</p>
-        </div>
+        <p id="outputp"></p>
+
     </form>
 </body>
 </html>
