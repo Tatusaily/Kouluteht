@@ -12,7 +12,7 @@ function randomizer(){
     }
     return array
 }
-
+// getEvenRandomArray kutsuu kahta ylempää funktiota.
 function getEvenRandomArray(){
     const original = randomizer()
     const evened = even(original)
@@ -20,3 +20,4 @@ function getEvenRandomArray(){
     console.log(`Original array: ${arrays[0]}`)
     console.log(`Altered array: ${arrays[1]}`)
 }
+getEvenRandomArray()
