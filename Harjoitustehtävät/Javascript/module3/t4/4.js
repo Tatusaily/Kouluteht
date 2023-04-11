@@ -13,3 +13,10 @@ const students = [
     id: '5423679',
   },
 ];
+const target = document.getElementById("target");
+students.forEach(student =>{
+  const newelement = document.createElement("option");
+  newelement.value = student.id;
+  newelement.innerHTML = student.name;
+  target.appendChild(newelement);
+});
