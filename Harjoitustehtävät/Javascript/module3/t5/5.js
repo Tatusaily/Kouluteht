@@ -104,6 +104,7 @@ while (randomPics.length < 4){
   if(randomPics.indexOf(n) === -1){randomPics.push(n)}
 }
 
+// Tehdään tällä tosi siistillä loopilla korttien sisällöt:
 for (let i = 0; i < 4; i++){
   let content = picArray[randomPics[i]]
   let newArticle = document.createElement("article")
