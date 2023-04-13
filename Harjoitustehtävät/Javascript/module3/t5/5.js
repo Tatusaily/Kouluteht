@@ -93,3 +93,38 @@ const picArray = [
 ];
 
 // add your code here
+
+const target = document.getElementById("pictures")
+
+// Otetaan 4 satunnaista alkiota picArraysta ja tehdään niistä elementit.
+// Luodaan 4 uniikkia satunnaislukua 0-8 väliltä. (picArrayssa on 9 alkiota.)
+const randomPics = []
+while (randomPics.length < 4){
+  let n = Math.floor(Math.random()*9)
+  if(randomPics.indexOf(n) === -1){randomPics.push(n)}
+}
+
+for (let i = 0; i < 4; i++){
+  let content = picArray[randomPics[i]]
+  let newArticle = document.createElement("article")
+  newArticle.class = "card"
+
+  let aTitle = document.createElement("h2")
+  aTitle.innerHTML = content.title
+  newArticle.appendChild(aTitle)
+
+  let figure = document.createElement("figure")
+  let image = document.createElement("img")
+  image.src = content.medium
+  image.alt = content.title
+  figure.appendChild(image)
+  let caption = document.createElement("figcaption")
+  caption.innerHTML = content.caption
+  figure.appendChild(caption)
+  newArticle.appendChild(figure)
+
+  let paragraph = document.createElement("p")
+  paragraph.innerHTML = content.description
+  newArticle.appendChild(paragraph)
+  document.querySelector("section").appendChild(newArticle)
+}
