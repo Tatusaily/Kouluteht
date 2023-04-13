@@ -115,7 +115,7 @@ for (let i = 0; i < 4; i++){
 
   let figure = document.createElement("figure")
   let image = document.createElement("img")
-  image.src = content.medium
+  image.src = content.image.medium
   image.alt = content.title
   figure.appendChild(image)
   let caption = document.createElement("figcaption")
