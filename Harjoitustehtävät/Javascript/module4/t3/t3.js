@@ -17,12 +17,11 @@ async function TVHakija(){
 }
 
 async function displayResults(input){
-    const input2 = input
     console.log("3")
-    console.log(input2)
+    console.log(input)
     try {
         document.getElementById("results").innerHTML = ""
-        input2.forEach(result => {
+        input.forEach(result => {
             // Haetaan tiedot muuttujiin
             const showName = result.show.name
             const showURL = result.show.url
