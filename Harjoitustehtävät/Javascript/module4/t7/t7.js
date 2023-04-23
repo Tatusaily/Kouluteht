@@ -1,3 +1,0 @@
-transitQuery = function (){
-
-}
