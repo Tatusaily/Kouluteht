@@ -1,0 +1,29 @@
+article{
+    margin: 10px;
+    background-color: antiquewhite;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+    min-width: 400px;
+    height: 700px;
+    display: inline-grid;
+    overflow: auto;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+article a{
+    display: block;
+    margin: auto;
+}
+
+article img{
+    display: block;
+    margin: auto;
+}
+article h2{
+    margin: auto;
+    font-size: xx-large;
+}
+article p{
+    text-align: center;
+}
