@@ -1,5 +1,7 @@
 import math
 
+# Funktiot joilla muutetaan radiaanit asteiksi tai toisin päin
+
 def radtodeg(rad: float):
     deg = (rad * (180/math.pi))
     return deg
@@ -32,10 +34,11 @@ print("")
 print("Kolmio:")
 kateetti1 = 2.3
 kateetti2 = 4.7
-hypotenuusa = math.sqrt(kateetti1**2 + kateetti2**2)
+hypotenuusa = math.sqrt(kateetti1**2 + kateetti2**2)  # Hypotenuusan neliö = sivujen neliöiden summa. Neliöjuuri = pituus
 kulma1 = math.asin(kateetti1/hypotenuusa)
 kulma2 = math.asin(kateetti2/hypotenuusa)
 
+print(f"Sivut ovat {kateetti1} ja {kateetti2}.")
 print(f"Hypotenuusa = {hypotenuusa:.1f}")
 print(f"Kulmat ovat: {radtodeg(kulma1):.1f}° "
       f"ja {radtodeg(kulma2):.1f}°\n")
